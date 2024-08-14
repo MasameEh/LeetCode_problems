@@ -6,6 +6,7 @@
 | ------- |
 | [0039-combination-sum](https://github.com/MasameEh/Leetcode_problems/tree/master/0039-combination-sum) |
 | [0040-combination-sum-ii](https://github.com/MasameEh/Leetcode_problems/tree/master/0040-combination-sum-ii) |
+| [1333-sort-the-jumbled-numbers](https://github.com/MasameEh/Leetcode_problems/tree/master/1333-sort-the-jumbled-numbers) |
 | [1556-make-two-arrays-equal-by-reversing-subarrays](https://github.com/MasameEh/Leetcode_problems/tree/master/1556-make-two-arrays-equal-by-reversing-subarrays) |
 | [2454-largest-local-values-in-a-matrix](https://github.com/MasameEh/Leetcode_problems/tree/master/2454-largest-local-values-in-a-matrix) |
 | [2714-left-and-right-sum-differences](https://github.com/MasameEh/Leetcode_problems/tree/master/2714-left-and-right-sum-differences) |
@@ -30,6 +31,7 @@
 ## Sorting
 |  |
 | ------- |
+| [1333-sort-the-jumbled-numbers](https://github.com/MasameEh/Leetcode_problems/tree/master/1333-sort-the-jumbled-numbers) |
 | [1556-make-two-arrays-equal-by-reversing-subarrays](https://github.com/MasameEh/Leetcode_problems/tree/master/1556-make-two-arrays-equal-by-reversing-subarrays) |
 ## String
 |  |
