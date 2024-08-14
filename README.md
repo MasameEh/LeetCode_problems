@@ -1,5 +1,3 @@
-# Leetcode_problems
-<!---LeetCode Topics Start-->
 # LeetCode Topics
 ## Array
 |  |
