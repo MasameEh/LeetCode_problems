@@ -7,6 +7,7 @@
 | [0039-combination-sum](https://github.com/MasameEh/Leetcode_problems/tree/master/0039-combination-sum) |
 | [0040-combination-sum-ii](https://github.com/MasameEh/Leetcode_problems/tree/master/0040-combination-sum-ii) |
 | [0075-sort-colors](https://github.com/MasameEh/Leetcode_problems/tree/master/0075-sort-colors) |
+| [0719-find-k-th-smallest-pair-distance](https://github.com/MasameEh/Leetcode_problems/tree/master/0719-find-k-th-smallest-pair-distance) |
 | [1293-three-consecutive-odds](https://github.com/MasameEh/Leetcode_problems/tree/master/1293-three-consecutive-odds) |
 | [1333-sort-the-jumbled-numbers](https://github.com/MasameEh/Leetcode_problems/tree/master/1333-sort-the-jumbled-numbers) |
 | [1496-lucky-numbers-in-a-matrix](https://github.com/MasameEh/Leetcode_problems/tree/master/1496-lucky-numbers-in-a-matrix) |
@@ -39,6 +40,7 @@
 |  |
 | ------- |
 | [0075-sort-colors](https://github.com/MasameEh/Leetcode_problems/tree/master/0075-sort-colors) |
+| [0719-find-k-th-smallest-pair-distance](https://github.com/MasameEh/Leetcode_problems/tree/master/0719-find-k-th-smallest-pair-distance) |
 | [1333-sort-the-jumbled-numbers](https://github.com/MasameEh/Leetcode_problems/tree/master/1333-sort-the-jumbled-numbers) |
 | [1556-make-two-arrays-equal-by-reversing-subarrays](https://github.com/MasameEh/Leetcode_problems/tree/master/1556-make-two-arrays-equal-by-reversing-subarrays) |
 | [2502-sort-the-people](https://github.com/MasameEh/Leetcode_problems/tree/master/2502-sort-the-people) |
@@ -70,4 +72,9 @@
 |  |
 | ------- |
 | [0075-sort-colors](https://github.com/MasameEh/Leetcode_problems/tree/master/0075-sort-colors) |
+| [0719-find-k-th-smallest-pair-distance](https://github.com/MasameEh/Leetcode_problems/tree/master/0719-find-k-th-smallest-pair-distance) |
+## Binary Search
+|  |
+| ------- |
+| [0719-find-k-th-smallest-pair-distance](https://github.com/MasameEh/Leetcode_problems/tree/master/0719-find-k-th-smallest-pair-distance) |
 <!---LeetCode Topics End-->
