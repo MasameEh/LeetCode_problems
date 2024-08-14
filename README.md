@@ -31,4 +31,16 @@
 |  |
 | ------- |
 | [1556-make-two-arrays-equal-by-reversing-subarrays](https://github.com/MasameEh/Leetcode_problems/tree/master/1556-make-two-arrays-equal-by-reversing-subarrays) |
+## String
+|  |
+| ------- |
+| [1756-minimum-deletions-to-make-string-balanced](https://github.com/MasameEh/Leetcode_problems/tree/master/1756-minimum-deletions-to-make-string-balanced) |
+## Dynamic Programming
+|  |
+| ------- |
+| [1756-minimum-deletions-to-make-string-balanced](https://github.com/MasameEh/Leetcode_problems/tree/master/1756-minimum-deletions-to-make-string-balanced) |
+## Stack
+|  |
+| ------- |
+| [1756-minimum-deletions-to-make-string-balanced](https://github.com/MasameEh/Leetcode_problems/tree/master/1756-minimum-deletions-to-make-string-balanced) |
 <!---LeetCode Topics End-->
