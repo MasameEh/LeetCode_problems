@@ -4,12 +4,12 @@ class Solution {
 
         for(int num : arr)
         {
-            if(required == 3) 
+            if(required == 3){
                 break; 
+            }
             if(num % 2 == 1){
                 required++;
-            }else 
-                required = 0;
+            }else required = 0;
         }
 
         return required == 3 ? true:false;
