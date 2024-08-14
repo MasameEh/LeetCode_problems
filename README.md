@@ -57,5 +57,10 @@
 ## Simulation
 |  |
 | ------- |
+| [1642-water-bottles](https://github.com/MasameEh/Leetcode_problems/tree/master/1642-water-bottles) |
 | [2846-robot-collisions](https://github.com/MasameEh/Leetcode_problems/tree/master/2846-robot-collisions) |
+## Math
+|  |
+| ------- |
+| [1642-water-bottles](https://github.com/MasameEh/Leetcode_problems/tree/master/1642-water-bottles) |
 <!---LeetCode Topics End-->
