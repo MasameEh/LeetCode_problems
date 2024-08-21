@@ -5,6 +5,7 @@ class Solution {
         for(int j = 0; j < t.length; j++){
             if(s[i] == t[j]){
                 sum += (i - j).abs();
+                break;
             }
         }
     }
