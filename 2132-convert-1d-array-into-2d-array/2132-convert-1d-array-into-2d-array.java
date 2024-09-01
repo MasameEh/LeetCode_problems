@@ -8,11 +8,11 @@ class Solution {
         // Initialize a 2D array with 'm' rows and 'n' columns
         int[][] arr2D = new int[m][n];
 
+        int nextIndex = 0;
         // Fill the 2D array with elements from the 1D array
         for (int i = 0; i < m; i++) {       
-            for (int j = 0; j < n; j++) {    
-                // Calculate the correct index in the 1D array and assign the value to the 2D array
-                arr2D[i][j] = original[i * n + j];
+            for (int j = 0; j < n; j++) {  
+                arr2D[i][j] = original[nextIndex++];
             }
         }
 
