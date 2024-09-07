@@ -3,10 +3,8 @@ class Solution {
         //StringBuilder rev = new StringBuilder();
 
         for(int i = 0; i < words.length; i++){
-            StringBuilder rev = new StringBuilder();
-            rev.append(words[i]);
+            StringBuilder rev = new StringBuilder(words[i]);
             rev.reverse();
-            System.out.println(rev);
             if(rev.toString().equals(words[i])){
                 return words[i];
             }
