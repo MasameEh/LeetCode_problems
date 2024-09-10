@@ -1,7 +1,8 @@
 # Write your MySQL query statement below
-
 SELECT name as Customers 
-FROM Customers c
-LEFT JOIN Orders o
-ON c.id = o.customerId 
-WHERE o.customerId IS NULL;
+FROM Customers 
+WHERE Customers.id != ALL (SELECT c.id  
+    FROM Customers c
+    JOIN Orders o
+    ON c.id = o.customerId )
+
