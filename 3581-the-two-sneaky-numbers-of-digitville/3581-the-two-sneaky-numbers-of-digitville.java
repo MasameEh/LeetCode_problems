@@ -8,6 +8,7 @@ class Solution {
                 sneaky[counter++] = nums[i];
                 i++;
             }
+            if(counter == 2) break;
         }
         return sneaky;
     }
