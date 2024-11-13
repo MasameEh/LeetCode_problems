@@ -3,7 +3,7 @@ class Solution {
         for(int i = 0; i < nums.length - 1; i++){
             int number = nums[i];
             for(int j = i + 1; j <= i + k && j < nums.length; j++){
-                if(number == nums[j]){
+                if(number == nums[j] && Math.abs(i - j) <= k){
                     return true;
                 }
             }
