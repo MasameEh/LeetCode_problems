@@ -15,9 +15,7 @@
  */
 class Solution {
     public boolean checkTree(TreeNode root) {
-        int value = root.val;
-
-        return (value == (root.left.val+root.right.val));
+        return (root.val == (root.left.val+root.right.val));
         
     }
 }
