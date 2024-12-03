@@ -7,13 +7,10 @@ class Solution {
         {
             if(j < spaces.length && i == spaces[j]){
                 modifiedStr.append(" ");
-                char c = s.charAt(i);
-                modifiedStr.append(c);
                 j++;
-            }else{
-                char c = s.charAt(i);
-                modifiedStr.append(c);
             }
+            char c = s.charAt(i);
+            modifiedStr.append(c);
         }
 
         return modifiedStr.toString();
