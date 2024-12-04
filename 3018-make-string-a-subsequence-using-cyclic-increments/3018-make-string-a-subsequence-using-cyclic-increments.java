@@ -10,11 +10,22 @@ class Solution {
             char c1 = str1.charAt(i);
             char c2 = str2.charAt(j);
 
-            if (c1 == c2 || (c1 == 'z' ? 'a' : (char)(c1 + 1)) == c2) {
+            if (c1 == c2) {
                 j++; // Move to the next character in str2
+            } else{
+                if(c1 == 'z'){
+                    c1 = 'a';
+                    if(c1 == c2){
+                        j++;
+                    }
+                }else {
+                    if((char)(c1+1) == c2){
+                        j++;
+                    }
+                }
             }
         }
-        
+
         return j == n2; 
     }
 }
