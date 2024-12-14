@@ -1,14 +1,11 @@
-import java.util.*;
-
 class Solution {
     public long pickGifts(int[] gifts, int k) {
-        // Create a max-heap (PriorityQueue) to store the gifts as doubles
+        
         PriorityQueue<Double> maxHeap = new PriorityQueue<>(Collections.reverseOrder());
         long sum = 0;
 
-        // Add all gifts to the max heap as double values
-        for (int i = 0; i < gifts.length; i++) {
-            maxHeap.add((double) gifts[i]);
+        for(int i = 0; i < gifts.length; i++){
+            maxHeap.add((double)gifts[i]);
         }
 
         // Perform 'k' operations on the largest gift piles
@@ -20,11 +17,10 @@ class Solution {
             }
         }
 
-        // Sum up all the remaining gifts in the heap
+       // Sum up all the remaining gifts in the heap
         while (!maxHeap.isEmpty()) {
-            sum += (long) (double) maxHeap.poll();  // Convert to long when summing
+            sum += (long) (double)maxHeap.poll();  // Convert to long when summing
         }
-
         return sum;
     }
 }
