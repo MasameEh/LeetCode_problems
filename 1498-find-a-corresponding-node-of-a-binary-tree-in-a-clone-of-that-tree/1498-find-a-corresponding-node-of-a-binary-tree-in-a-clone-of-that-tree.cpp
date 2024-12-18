@@ -12,18 +12,18 @@ class Solution {
 public:
     TreeNode* wanted;
 
-    void inOrder(TreeNode* cloned, int val){
+    void preOrder(TreeNode* cloned, int val){
         if(!cloned){
             return;
         }
         if(cloned->val == val){
             wanted = cloned;
         }
-        inOrder(cloned->left, val);
-        inOrder(cloned->right, val);
+        preOrder(cloned->left, val);
+        preOrder(cloned->right, val);
     }
     TreeNode* getTargetCopy(TreeNode* original, TreeNode* cloned, TreeNode* target) {
-        inOrder(cloned, target->val);
+        preOrder(cloned, target->val);
         return wanted;
     }
 };
