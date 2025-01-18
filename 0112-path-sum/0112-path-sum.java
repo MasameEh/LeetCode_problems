@@ -1,46 +1,32 @@
-/**
- * Definition for a binary tree node.
- * public class TreeNode {
- *     int val;
- *     TreeNode left;
- *     TreeNode right;
- *     TreeNode() {}
- *     TreeNode(int val) { this.val = val; }
- *     TreeNode(int val, TreeNode left, TreeNode right) {
- *         this.val = val;
- *         this.left = left;
- *         this.right = right;
- *     }
- * }
- */
 class Solution {
     int sum = 0;
-    List<Integer> sums = new ArrayList<>();
 
-    private void inOrder(TreeNode node){
-        if(node == null){
-            return;
+    private boolean inOrder(TreeNode node, int targetSum) {
+        if (node == null) 
+        {
+            return false;
         }
-        //System.out.println( node.val);
+
         sum += node.val;
-        inOrder(node.left);
-        if(node.left != null) sum -= node.left.val;
 
-        inOrder(node.right);
-        if(node.right != null) sum -= node.right.val;
+        // Check if we've reached a leaf node with the target sum
+        if(node.left == null && node.right == null && sum == targetSum) 
+        {
+            return true;
+        }
 
-        if(node.right == null && node.left == null){
-            sums.add(sum);
+        // Recur for left and right subtrees
+        if(inOrder(node.left, targetSum) || inOrder(node.right, targetSum)) 
+        {
+            return true;
         }
-        
-    }
-    public boolean hasPathSum(TreeNode root, int targetSum) {
-        inOrder(root);
-        for(int sum : sums){
-            if(sum == targetSum) {
-                return true;
-            }
-        }
+
+        // Backtrack: subtract the current node's value from the running sum
+        sum -= node.val;
         return false;
+    }
+
+    public boolean hasPathSum(TreeNode root, int targetSum) {
+        return inOrder(root, targetSum);
     }
 }
