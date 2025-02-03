@@ -17,8 +17,7 @@ class Solution {
                 }
                 len++;
             }else len = 1;
-            
-            System.out.println(len);
+
             if(maxLen < len){
                 maxLen = len;
             }
