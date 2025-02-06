@@ -13,7 +13,7 @@ class Solution {
         for(Map.Entry<Integer, Integer> entry : productFreq.entrySet()){
             int freq = entry.getValue();
             if (freq > 1) {
-                count += (freq * (freq - 1) / 2) * 8;  // Formula for tuple count
+                count += (freq * (freq - 1) / 2) * 8;  
             }
         }
         return count;  
