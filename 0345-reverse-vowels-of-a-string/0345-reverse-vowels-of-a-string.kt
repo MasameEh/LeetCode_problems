@@ -13,9 +13,9 @@ class Solution {
             }   
         }
 
-        val reversedVowels = vowelsList.reversed()
+        vowelsList.reverse()
         var reversedStr = ""
-        var i = 0
+        
         for(c in s){
             if(c.lowercaseChar() == 'a' ||
                 c.lowercaseChar() == 'e' ||
@@ -23,7 +23,8 @@ class Solution {
                 c.lowercaseChar() == 'o' ||
                 c.lowercaseChar() == 'u' ){
 
-                reversedStr += reversedVowels[i++] 
+                reversedStr += vowelsList[0] 
+                vowelsList.removeFirst()
             }else{
                 reversedStr += c 
             }
