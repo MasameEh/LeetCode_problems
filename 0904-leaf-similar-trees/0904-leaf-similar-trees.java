@@ -17,7 +17,7 @@ class Solution {
     private List<Integer> leafs1 = new ArrayList();
     private List<Integer> leafs2 = new ArrayList();
 
-    private void inOrder(TreeNode root, boolean isOne){
+    private void dfs(TreeNode root, boolean isOne){
         if(root == null){
             return;
         }
@@ -28,16 +28,14 @@ class Solution {
                 leafs2.add(root.val);  
             }
         }else{
-            inOrder(root.left, isOne);
-            inOrder(root.right, isOne);
+            dfs(root.left, isOne);
+            dfs(root.right, isOne);
         }
 
     }
     public boolean leafSimilar(TreeNode root1, TreeNode root2) {
-        inOrder(root1, true);
-        inOrder(root2, false);
-        System.out.println(leafs1);
-        System.out.println(leafs2);
+        dfs(root1, true);
+        dfs(root2, false);
 
         return leafs1.equals(leafs2);
     }
