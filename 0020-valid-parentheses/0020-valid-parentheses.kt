@@ -3,21 +3,21 @@ class Solution {
         val stackS = mutableListOf<Char>()
 
         for(char in s){
-            if(char == '(' ){
-                stackS.add(')')
-            }else if(char == '['){
-                stackS.add(']')
-            }else if(char == '{'){
-                stackS.add('}')
-            }else {
-                if(stackS.isNotEmpty()){
-                    val poppedElement = stackS.removeLast()
-                    if(poppedElement != char){
-                        return false
-                    }
-                }else return false
+
+            when(char){
+                '(' ->  stackS.add(')')
+                '[' ->  stackS.add(']')
+                '{' -> stackS.add('}')
+                else ->  
+                    if(stackS.isNotEmpty()){
+                        val poppedElement = stackS.removeLast()
+                        if(poppedElement != char){
+                            return false
+                        }
+                    }else return false 
             }
-        } 
+
+        }
         return stackS.isEmpty()
     }
 }
