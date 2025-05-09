@@ -15,8 +15,8 @@ class Solution {
         }
 
 
-            if (freqMap2.keys != freqMap1.keys) return false
+        if (freqMap2.keys != freqMap1.keys) return false
 
-            return freqMap2.values.sorted() == freqMap1.values.sorted()
+        return freqMap2.values.sorted() == freqMap1.values.sorted()
     }
 }
