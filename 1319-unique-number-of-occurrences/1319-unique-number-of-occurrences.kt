@@ -6,8 +6,14 @@ class Solution {
             freqMap.put(num, freqMap.getOrDefault(num, 0) + 1)
         }
 
-        val freqSet = freqMap.values.toSet()
+        val seenFreqs = mutableSetOf<Int>()
 
-        return arr.toSet().size == freqSet.size
+        for (freq in freqMap.values) {
+            if (!seenFreqs.add(freq)) {
+                return false 
+            }
+        }
+
+        return true
     }
 }
