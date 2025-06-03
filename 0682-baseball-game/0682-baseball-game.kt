@@ -19,7 +19,6 @@ class Solution {
                         val secondToLast = ansList.getOrNull(ansList.size - 2) ?: 0
                         ansList.add(secondToLast + ansList.last())
                     } 
-                    else -> println("")
                 }   
             }
         }
